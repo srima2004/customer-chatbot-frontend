@@ -9,7 +9,7 @@ const Chatbot = () => {
   const askQuestion = async () => {
     if (!question) return;
     
-    const res = await axios.post("http://localhost:5000/ask", { question });
+    const res = await axios.post("https://customerdata-chatbot.onrender.com/ask", { question });
     setResponse(res.data.answer);
   };
 
